@@ -1,0 +1,244 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+
+<!DOCTYPE liberary SYSTEM "config.dtd">
+
+<liberary>
+    <location>
+        13 Main Street
+    </location>
+    <discription>
+        Welcome to our library, 
+        <breakline/>
+        a place where book lovers come together to explore new worlds and ideas.
+    </discription>
+    <librarian>
+        <name gender = "male"> Ali Osama </name>
+    </librarian>
+    <books>
+        <book title = "title">
+            <ISBN>ISBN Number</ISBN>
+            <author> &writer; Author Name</author>
+            <preface>
+                <![CDATA[
+                    preference for the book
+                ]]>
+            </preface>
+            <parts>
+                <part title = "part1">
+                    <chapters>
+                        <chapter title = "chapter1">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    <chapter title = "chapter2">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    </chapters>
+                </part>
+                <part title = "part2">
+                    <chapters>
+                        <chapter title = "chapter1">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    <chapter title = "chapter2">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+        <book title = "title">
+            <ISBN>ISBN Number</ISBN>
+            <author>Author Name</author>
+            <preface>
+                <![CDATA[
+                    preference for the book
+                ]]>
+            </preface>
+            <parts>
+                <part title = "part1">
+                    <chapters>
+                        <chapter title = "chapter1">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    <chapter title = "chapter2">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    </chapters>
+                </part>
+                <part title = "part2">
+                    <chapters>
+                        <chapter title = "chapter1">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    <chapter title = "chapter2">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+        <book title = "title">
+            <ISBN>ISBN Number</ISBN>
+            <author>Author Name</author>
+            <preface>
+                <![CDATA[
+                    preference for the book
+                ]]>
+            </preface>
+            <parts>
+                <part title = "part1">
+                    <chapters>
+                        <chapter title = "chapter1">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    <chapter title = "chapter2">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    </chapters>
+                </part>
+                <part title = "part2">
+                    <chapters>
+                        <chapter title = "chapter1">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    <chapter title = "chapter2">
+                        <sections>
+                            <section title = "section1Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                            <section title = "section2Title">
+                                <content>
+                                    paragraph
+                                </content>
+                            </section>
+                        </sections>
+                    </chapter>
+                    </chapters>
+                </part>
+            </parts>
+        </book>
+    </books>
+</liberary>

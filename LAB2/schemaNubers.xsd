@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<xs:schema
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="https://jets.iti.gov.eg/xml/note"
+ xmlns="https://jets.iti.gov.eg/xml/note"
+ elementFormDefault="qualified">
+
+    <xs:element name="WeekDay">
+        <xs:simpleType>
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="7"/>
+        </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+</xs:schema>

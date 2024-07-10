@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<xs:schema
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="https://jets.iti.gov.eg/xml/note"
+ xmlns="https://jets.iti.gov.eg/xml/note"
+ elementFormDefault="qualified">
+
+  <xs:element name="liberary">
+
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="location" type="xs:string"/>
+        <xs:element name="description" type="xs:string"/>
+        <xs:element name="librarian">
+        <xs:complexType>
+            <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="gender">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                    <xs:enumeration value="male"/>
+                    <xs:enumeration value="female"/>
+                    </xs:restriction>
+                </xs:simpleType>
+                </xs:attribute>
+            </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+        </xs:element>
+
+        <xs:element name="books">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="book" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ISBN" type="xs:string"/>
+                    <xs:element name="author" type="xs:string"/>
+                    <xs:element name="preface" type="xs:string"/>
+                    <xs:element name="parts">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="part" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="chapters">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="chapter" maxOccurs="3">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="sections">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="section" maxOccurs="5">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="content" type="xs:string"/>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="title" type="xs:string"/>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="title" type="xs:string"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="title" type="xs:string"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="title" type="xs:string"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+
+  </xs:element>
+
+</xs:schema>

@@ -1,0 +1,28 @@
+    <!ELEMENT library (location, description, librarian, books)>
+    <!ELEMENT location (#PCDATA)>
+    <!ELEMENT description (#PCDATA)>
+    <!ELEMENT breakline EMPTY>
+    <!ELEMENT librarian (name)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT books (book+)>
+    <!ELEMENT book ( ISBN , author,preface, parts)>
+    <!ELEMENT ISBN (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    
+<!ENTITY writer SYSTEM "https://jets.iti.gov.eg/entities.dtd">
+
+    <!ELEMENT preface (#PCDATA)>
+    <!ELEMENT parts (part+)>
+    <!ELEMENT part (chapters)>
+
+
+<!ATTLIST book title CDATA #REQUIRED>
+<!ATTLIST part title CDATA #REQUIRED>
+<!ATTLIST name gendre (male | female) "male">
+
+    <!ELEMENT chapters (chapter+)>
+    <!ELEMENT chapter (sections)>
+    <!ELEMENT sections (section+)>
+    <!ELEMENT section (#PCDATA)>
+
+<!ATTLIST chapter title CDATA #REQUIRED>

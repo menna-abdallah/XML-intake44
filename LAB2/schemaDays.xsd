@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<xs:schema
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="https://jets.iti.gov.eg/xml/note"
+ xmlns="https://jets.iti.gov.eg/xml/note"
+ elementFormDefault="qualified">
+
+ <xs:element name="Days" type="weekDay"/>
+ 
+<xs:simpleType name="weekDay">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Saturday"/>
+    <xs:enumeration value="Sunday"/>
+    <xs:enumeration value="Monday"/>
+    <xs:enumeration value="Tuesday"/>
+    <xs:enumeration value="Wednesday"/>
+    <xs:enumeration value="Thursday"/>
+    <xs:enumeration value="Friday"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
+<!-- 
+<xs:schema
+ xmlns:xs="http://www.w3.org/2001/XMLSchema"
+ targetNamespace="https://jets.iti.gov.eg/xml/note"
+ xmlns="https://jets.iti.gov.eg/xml/note"
+ elementFormDefault="qualified">
+
+  <xs:simpleType name="weekDay">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Saturday"/>
+      <xs:enumeration value="Sunday"/>
+      <xs:enumeration value="Monday"/>
+      <xs:enumeration value="Tuesday"/>
+      <xs:enumeration value="Wednesday"/>
+      <xs:enumeration value="Thursday"/>
+      <xs:enumeration value="Friday"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:element name="Days" type="weekDay"/>
+
+</xs:schema> -->
